@@ -38,15 +38,15 @@ Once GitHub Pages is enabled, your site will be accessible at:
 https://<username>.github.io/<repository-name>/
 ```
 
-For this repository:
+For this repository, replace `<username>` with `MichaelSGreen` and `<repository-name>` with `My-Oura-Sync`:
 ```
 https://MichaelSGreen.github.io/My-Oura-Sync/
 ```
 
 **Individual Pages**:
-- Home: `https://MichaelSGreen.github.io/My-Oura-Sync/`
-- Privacy Policy: `https://MichaelSGreen.github.io/My-Oura-Sync/privacy.html`
-- Terms of Service: `https://MichaelSGreen.github.io/My-Oura-Sync/terms.html`
+- Home: `https://<username>.github.io/<repository-name>/`
+- Privacy Policy: `https://<username>.github.io/<repository-name>/privacy.html`
+- Terms of Service: `https://<username>.github.io/<repository-name>/terms.html`
 
 ### Custom Domain (Optional)
 
