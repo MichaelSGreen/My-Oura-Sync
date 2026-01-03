@@ -1,107 +1,79 @@
-# My Oura Sync - Legal Documentation
+# My Oura Sync
 
-This repository contains the legal documentation pages required for the My Oura Sync OAuth application. These pages are hosted via GitHub Pages and linked in the Oura OAuth app registration.
+A secure OAuth application for connecting and synchronizing your Oura Ring data.
 
-## What's Included
+## 📄 Documentation
 
-- **index.html** - Landing page with links to legal documents
-- **privacy.html** - Complete Privacy Policy
-- **terms.html** - Complete Terms of Service
-- **styles.css** - Shared responsive styling
-- **.gitignore** - Basic web project exclusions
+This repository contains the GitHub Pages site with legal documentation for the My Oura Sync application:
 
-## Setting Up GitHub Pages
+- **Privacy Policy**: Details on how we collect, use, and protect your data
+- **Terms of Service**: Terms and conditions for using the application
 
-Follow these steps to publish your legal pages:
+## 🌐 GitHub Pages Setup
 
-### 1. Create the Repository
+### Publishing Steps
 
-If you haven't already:
-```bash
-git clone https://github.com/<your-username>/My-Oura-Sync.git
-cd My-Oura-Sync
-git add .
-git commit -m "Add legal documentation pages"
-git push
+1. **Enable GitHub Pages**:
+   - Go to your repository settings on GitHub
+   - Navigate to **Settings** → **Pages**
+   - Under "Source", select the branch you want to deploy (e.g., `main` or `copilot/create-github-pages-repo`)
+   - Select the root folder (`/`) as the source directory
+   - Click **Save**
+
+2. **Wait for Deployment**:
+   - GitHub will automatically build and deploy your site
+   - This typically takes 1-2 minutes
+   - You'll see a green checkmark when deployment is complete
+
+3. **Access Your Site**:
+   - Your site will be available at the URL shown in the Pages settings
+   - Typically follows the format below
+
+### URL Templates
+
+Once GitHub Pages is enabled, your site will be accessible at:
+
+**Repository Pages URL**:
+```
+https://<username>.github.io/<repository-name>/
 ```
 
-### 2. Enable GitHub Pages
-
-1. Go to your repository on GitHub: `https://github.com/<your-username>/My-Oura-Sync`
-2. Click **Settings** (in the repository menu)
-3. Scroll down and click **Pages** (in the left sidebar)
-4. Under **Source**, select:
-   - **Deploy from a branch**
-   - Branch: **main** (or **master** if that's your default branch)
-   - Folder: **/ (root)**
-5. Click **Save**
-
-GitHub will build and deploy your site. This typically takes 1-2 minutes.
-
-### 3. Verify Deployment
-
-Once deployed, your pages will be available at:
-
+For this repository, replace `<username>` with `MichaelSGreen` and `<repository-name>` with `My-Oura-Sync`:
 ```
-https://<your-username>.github.io/My-Oura-Sync/
+https://MichaelSGreen.github.io/My-Oura-Sync/
 ```
 
-**Important:** Test both legal pages in an incognito/private browser window to ensure they're publicly accessible:
-- Privacy Policy: `https://<your-username>.github.io/My-Oura-Sync/privacy.html`
-- Terms of Service: `https://<your-username>.github.io/My-Oura-Sync/terms.html`
+**Individual Pages**:
+- Home: `https://<username>.github.io/<repository-name>/`
+- Privacy Policy: `https://<username>.github.io/<repository-name>/privacy.html`
+- Terms of Service: `https://<username>.github.io/<repository-name>/terms.html`
 
-## URLs for Oura OAuth App Form
+### Custom Domain (Optional)
 
-When registering your OAuth application with Oura, use these URLs:
+To use a custom domain:
 
-**Privacy Policy URL:**
+1. Add a `CNAME` file to the repository root with your domain name
+2. Configure your DNS provider to point to GitHub Pages
+3. Enable HTTPS in repository settings (recommended)
+
+See [GitHub's custom domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) for detailed instructions.
+
+## 📁 Repository Structure
+
 ```
-https://<your-username>.github.io/My-Oura-Sync/privacy.html
-```
-
-**Terms of Service URL:**
-```
-https://<your-username>.github.io/My-Oura-Sync/terms.html
-```
-
-Replace `<your-username>` with your actual GitHub username.
-
-## Pre-Launch Checklist
-
-Before submitting your Oura OAuth application:
-
-- [ ] **Pages are live**: Confirm both privacy.html and terms.html load in an incognito browser window
-- [ ] **URLs are correct**: The URLs you paste into the Oura app form exactly match your deployed pages
-- [ ] **Redirect URI matches**: Your redirect URI(s) in the Oura app form match your actual callback URL(s) (localhost for development, your production domain for production)
-- [ ] **Review data scopes**: Confirm the "data types accessed" wording in privacy.html matches the OAuth scopes you're actually requesting from Oura
-- [ ] **Contact email works**: Test that prometheusfoundation@gmail.com is monitored and responsive
-
-## Customization (Optional)
-
-### Update Data Types
-
-If you're requesting different OAuth scopes than listed, update the data types section in `privacy.html`:
-
-```html
-<ul>
-    <li>Sleep data and metrics</li>
-    <li>Readiness scores and related metrics</li>
-    <!-- Add or remove items to match your scopes -->
-</ul>
+My-Oura-Sync/
+├── index.html          # Homepage with links to legal documents
+├── privacy.html        # Privacy Policy
+├── terms.html          # Terms of Service
+├── .gitignore         # Git ignore rules
+└── README.md          # This file
 ```
 
-### Branding and Styling
+## 📧 Contact
 
-- Modify `styles.css` to adjust colors, fonts, or layout
-- All pages share the same stylesheet for consistency
-- The design is responsive and mobile-friendly
+For questions or concerns, please contact:
+**Email**: prometheusfoundation@gmail.com
 
-## Contact
+## 📅 Last Updated
 
-For questions about this project or the My Oura Sync application:
-
-**Email:** prometheusfoundation@gmail.com
-
-## License
-
-These legal documents are specific to the My Oura Sync application. Please do not reuse them verbatim for other projects - consult with legal counsel for your own terms and privacy policy.
+All legal documents were last updated on: **2026-01-03**
